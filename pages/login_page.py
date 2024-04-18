@@ -9,7 +9,7 @@ class LoginPage(BasePage):
         self.should_be_register_form()
 
     def should_be_login_url(self):
-        assert "login434" in self.browser.current_url, "Login substring is not presented in current url"
+        assert "login" in self.browser.current_url, "Login substring is not presented in current url"
         assert True
 
     def should_be_login_form(self):
