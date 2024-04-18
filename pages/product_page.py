@@ -4,9 +4,6 @@ from .locators import ProductPageLocators
 
 class ProductPage(BasePage):
 
-    def should_be_product_page(self):
-        assert "newYear" in self.browser.current_url, "newYear substring is not presented in current url"
-
     def add_to_cart(self):
         assert self.is_element_present(*ProductPageLocators.ADD_TO_CART_BUTTON), "Add to cart button is not presented"
         add_to_cart_btn = self.browser.find_element(*ProductPageLocators.ADD_TO_CART_BUTTON)
