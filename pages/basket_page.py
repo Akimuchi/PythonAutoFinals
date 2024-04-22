@@ -1,6 +1,7 @@
 from .locators import BasePageLocators
 from .base_page import BasePage
 
+
 class BasketPage(BasePage):
 
     def is_basket_empty_message_present(self):
